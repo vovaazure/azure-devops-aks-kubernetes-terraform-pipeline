@@ -11,7 +11,7 @@ stages:
 - stage: TerraformValidate
   jobs:
     - job: TerraformValidateJob
-      continueOnError: false
+      continueOnError: true
       steps:
       - task: PublishPipelineArtifact@1
         displayName: Publish Artifacts
